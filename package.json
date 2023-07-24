@@ -1,10 +1,10 @@
 {
-  "name": "microform",
-  "version": "0.0.0",
+  "name": "milliform",
+  "version": "0.1.0",
   "main": "dist/index.js",
   "source": "src/index.tsx",
   "types": "dist/index.d.ts",
-  "repository": "git@github.com:hamlim/microform.git",
+  "repository": "git@github.com:hamlim/milliform.git",
   "author": "Matt Hamlin <matthewjameshamlin@gmail.com>",
   "license": "MIT",
   "packageManager": "yarn@3.3.1",
@@ -15,7 +15,7 @@
     "test-watch": "jest --watch",
     "test-cov": "jest --collectCoverage",
     "prepub": "yarn build",
-    "pub": "yarn prepub && yarn npm publish --access public",
+    "pub": "yarn prepub && npm publish --access public",
     "tsc": "tsc --noEmit"
   },
   "devDependencies": {
