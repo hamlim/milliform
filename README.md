@@ -1,17 +1,17 @@
-# `microform`
+# `milliform`
 
 A super basic React form library!
 
 ## Installation:
 
 ```sh
-yarn add microform
+yarn add milliform
 ```
 
 ## Usage:
 
 ```tsx
-import { useForm, Fields } from 'microform'
+import { useForm, Fields } from 'milliform'
 
 let fields: Fields = {
   // name of the field defines the value, setter, and error fields
