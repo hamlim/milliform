@@ -1,3 +1,5 @@
 {
-  "sandboxes": ["new"]
+  "sandboxes": ["new"],
+  "packages": ["packages/milliform"],
+  "node": "18"
 }
