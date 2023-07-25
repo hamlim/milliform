@@ -189,7 +189,7 @@ let fields: Fields = {
       // the function must either return a string (indicating an error/invalid value)
       // or undefined indicating that the value is valid
       if (Number(amount) < 50) {
-        return 'Invalid amount selected!';
+        return 'Invalid amount selected!'
       }
     }
   }
@@ -264,7 +264,7 @@ let fields: Fields = {
       // the function must either return a string (indicating an error/invalid value)
       // or undefined indicating that the value is valid
       if (Number(amount) < 50) {
-        return 'Invalid amount selected!';
+        return 'Invalid amount selected!'
       }
     }
   }
