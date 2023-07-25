@@ -55,7 +55,7 @@ export default function Home() {
           Or it can be imported from a CDN like <InlineCode>unpkg</InlineCode>{' '}
           or <InlineCode>esm.sh</InlineCode>:
         </Text>
-        <Code lang="ts">{`import {useForm, Fields} from 'https://esm.sh/milliform@latest';`}</Code>
+        <Code lang="ts">{`import {useForm, Fields} from 'https://esm.sh/milliform@latest'`}</Code>
         <Heading id="usage" is="h2">
           Usage:
         </Heading>
@@ -253,10 +253,7 @@ let fields: Fields = {
             <Text>A function that resets all field values and errors</Text>
           </ListItem>
         </List>
-        <Code
-          lang="tsx"
-          lineNumbers
-        >{`import {useForm, Fields} from 'milliform';
+        <Code lang="tsx" lineNumbers>{`import {useForm, Fields} from 'milliform'
 
 let fields: Fields = {
   // field name
@@ -280,7 +277,7 @@ function Form() {
     errors,
     validate,
     reset
-  } = useForm(fields);
+  } = useForm(fields)
 
   // ... render the form ...
 }`}</Code>
