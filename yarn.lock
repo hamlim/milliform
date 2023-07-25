@@ -5097,7 +5097,7 @@ __metadata:
     date-fns: ^2.30.0
     eslint: 8.45.0
     eslint-config-next: 13.4.12
-    milliform: "workspace:*"
+    milliform: "*"
     next: canary
     postcss: 8.4.27
     react: experimental
@@ -7623,7 +7623,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"milliform@workspace:*, milliform@workspace:packages/milliform":
+"milliform@*, milliform@workspace:packages/milliform":
   version: 0.0.0-use.local
   resolution: "milliform@workspace:packages/milliform"
   dependencies:
