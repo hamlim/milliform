@@ -1482,6 +1482,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@code-hike/lighter@npm:0.8.1":
+  version: 0.8.1
+  resolution: "@code-hike/lighter@npm:0.8.1"
+  checksum: 1d676e03f2f4426e13cb3318ba70af08d40816f6e1b506d9b1fcb926fb226e7cb8e5116630c4056a9e9e1b67ac7d316c1ecd5982859f4f08e6908879166adbe0
+  languageName: node
+  linkType: hard
+
 "@eslint-community/eslint-utils@npm:^4.2.0":
   version: 4.4.0
   resolution: "@eslint-community/eslint-utils@npm:4.4.0"
@@ -4392,6 +4399,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"bright@npm:^0.8.4":
+  version: 0.8.4
+  resolution: "bright@npm:0.8.4"
+  dependencies:
+    "@code-hike/lighter": 0.8.1
+    server-only: ^0.0.1
+  peerDependencies:
+    react: ^18
+  checksum: 1d1e9d7157d4d100f70fcbe28476079c76852a3fbabef56148c8e23d2a4dd407ecc7dccd6e07a468606553025a14bed2a721ba2a02f4e4513ce820d5d6401c93
+  languageName: node
+  linkType: hard
+
 "browserslist@npm:^4.21.3, browserslist@npm:^4.21.5":
   version: 4.21.5
   resolution: "browserslist@npm:4.21.5"
@@ -5071,6 +5090,7 @@ __metadata:
     "@types/react": 18.2.16
     "@types/react-dom": 18.2.7
     autoprefixer: 10.4.14
+    bright: ^0.8.4
     class-variance-authority: ^0.7.0
     clsx: ^2.0.0
     cmdk: ^0.2.0
@@ -9029,6 +9049,13 @@ __metadata:
   bin:
     semver: bin/semver.js
   checksum: 12d8ad952fa353b0995bf180cdac205a4068b759a140e5d3c608317098b3575ac2f1e09182206bf2eb26120e1c0ed8fb92c48c592f6099680de56bb071423ca3
+  languageName: node
+  linkType: hard
+
+"server-only@npm:^0.0.1":
+  version: 0.0.1
+  resolution: "server-only@npm:0.0.1"
+  checksum: c432348956641ea3f460af8dc3765f3a1bdbcf7a1e0205b0756d868e6e6fe8934cdee6bff68401a1dd49ba4a831c75916517a877446d54b334f7de36fa273e53
   languageName: node
   linkType: hard
 

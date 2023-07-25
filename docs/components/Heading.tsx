@@ -4,6 +4,7 @@ import type { ReactNode } from 'react'
 interface SpecificHeadingProps {
   children: ReactNode
   className?: string
+  id?: string
 }
 
 export function H1(props: SpecificHeadingProps) {
