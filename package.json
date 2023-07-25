@@ -6,13 +6,13 @@
   "private": true,
   "packageManager": "yarn@3.6.1",
   "scripts": {
-    "build": "yarn workspace milliform build",
-    "test": "yarn workspace milliform test",
+    "build": "turbo run build",
+    "test": "turbo run test",
     "pub": "yarn workspace milliform pub",
     "docs:start": "yarn workspace docs dev",
     "docs:build": "yarn workspace docs build"
   },
   "devDependencies": {
-    "turbo": "latest"
+    "turbo": "1.10.11"
   }
 }
