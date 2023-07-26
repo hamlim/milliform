@@ -2,7 +2,7 @@
 import { useForm, Fields } from 'milliform'
 import { FormEvent } from 'react'
 
-let fields: Fields = {
+let fields: Fields<'email' | 'password'> = {
   email: {
     validate(email) {
       if (!email || !email.includes('@')) {
