@@ -1,9 +1,9 @@
 'use client'
 import { useReducer, useMemo, useCallback } from 'react'
 
-export interface Fields {
-  [key: string]: {
-    validate(value?: string): string | void
+export type Fields<Fieldname extends string> = {
+  [T in Fieldname]: {
+    validate(value?: string): string | void;
   }
 }
 
@@ -16,10 +16,26 @@ interface Form {
   validate(): Errors
   reset(): void
 }
+// @TODO: finish Form return type
+
+// interface Form {
+//   values: {
+//     email: string
+//     password: string
+//   },
+//   setters: {
+//     setEmail(value: string) => void
+//     setPassword(value: string) => void
+//   }
+//   errors: { email?: string, password?: string } | null
+//   validate() => { email?: string, password?: string } | null
+//   reset() => void
+// }
+
 
 interface State {
   _meta: {
-    fields: Fields
+    fields: Fields<'email' | 'password'>
     fieldKeys: Array<string>
   }
   values: Record<string, string>
