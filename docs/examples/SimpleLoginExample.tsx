@@ -26,7 +26,7 @@ export default function Form() {
     errors,
     validate,
     reset,
-  } = useForm(fields)
+  } = useForm<['email', 'password']>(fields)
 
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault()

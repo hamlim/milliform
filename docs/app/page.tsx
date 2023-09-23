@@ -97,7 +97,7 @@ export default function Form() {
     errors,
     validate,
     reset,
-  } = useForm(fields)
+  } = useForm<['email', 'password']>(fields)
 
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault()
@@ -152,7 +152,8 @@ export default function Form() {
       </button>
     </form>
   )
-}`}</Code>
+}
+`}</Code>
           }
           live={<SimpleLoginExample />}
         />

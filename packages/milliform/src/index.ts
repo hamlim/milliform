@@ -7,23 +7,29 @@ export interface Fields {
   }
 }
 
-type Errors = Record<string, string> | null
+type Errors<FieldNames extends Array<string>> = Record<
+  FieldNames[number],
+  string
+> | null
 
-interface Form {
-  values: Record<string, string>
-  setters: Record<string, (value: string) => void>
-  errors: Errors
-  validate(): Errors
+interface Form<FieldNames extends Array<string>> {
+  values: Record<FieldNames[number], string>
+  setters: Record<
+    `set${Capitalize<FieldNames[number]>}`,
+    (value: string) => void
+  >
+  errors: Errors<FieldNames>
+  validate(): Errors<FieldNames>
   reset(): void
 }
 
-interface State {
+interface State<FieldNames extends Array<string>> {
   _meta: {
     fields: Fields
-    fieldKeys: Array<string>
+    fieldKeys: FieldNames
   }
-  values: Record<string, string>
-  errors: Record<string, string | null>
+  values: Record<FieldNames[number], string>
+  errors: Record<FieldNames[number], string | null>
 }
 
 type Action =
@@ -31,7 +37,10 @@ type Action =
   | { type: 'validate'; errors: Record<string, string | null> }
   | { type: 'update'; name: string; value: string }
 
-function reducer(state: State, action: Action) {
+function reducer<FieldNames extends Array<string>>(
+  state: State<FieldNames>,
+  action: Action,
+) {
   switch (action.type) {
     case 'update': {
       return {
@@ -97,7 +106,13 @@ function toEmptyObject(
   return result
 }
 
-export function useForm(fields: Fields): Form {
+type Prettify<T> = {
+  [K in keyof T]: T[K]
+} & {}
+
+export function useForm<FieldNames extends Array<string>>(
+  fields: Fields,
+): Prettify<Form<FieldNames>> {
   let fieldKeys = Object.keys(fields)
   let defaultState = useMemo(
     () => ({
@@ -114,14 +129,14 @@ export function useForm(fields: Fields): Form {
 
   let updaters = useMemo(
     () =>
-      fieldKeys.reduce(
+      fieldKeys.reduce<Form<FieldNames>['setters']>(
         (acc, key) => ({
           ...acc,
           [`set${upperCase(key)}`]: (value: string) => {
             dispatch({ type: 'update', name: key, value })
           },
         }),
-        {},
+        {} as unknown as Form<FieldNames>['setters'],
       ),
     [],
   )
@@ -153,7 +168,7 @@ export function useForm(fields: Fields): Form {
 
   return {
     setters: updaters,
-    values: state.values,
+    values: state.values as Record<FieldNames[number], string>,
     errors: toEmptyObject(state.errors),
     validate,
     reset,
