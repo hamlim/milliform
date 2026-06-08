@@ -3895,6 +3895,48 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@turbo/darwin-64@npm:2.9.14":
+  version: 2.9.14
+  resolution: "@turbo/darwin-64@npm:2.9.14"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@turbo/darwin-arm64@npm:2.9.14":
+  version: 2.9.14
+  resolution: "@turbo/darwin-arm64@npm:2.9.14"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@turbo/linux-64@npm:2.9.14":
+  version: 2.9.14
+  resolution: "@turbo/linux-64@npm:2.9.14"
+  conditions: os=linux & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@turbo/linux-arm64@npm:2.9.14":
+  version: 2.9.14
+  resolution: "@turbo/linux-arm64@npm:2.9.14"
+  conditions: os=linux & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@turbo/windows-64@npm:2.9.14":
+  version: 2.9.14
+  resolution: "@turbo/windows-64@npm:2.9.14"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@turbo/windows-arm64@npm:2.9.14":
+  version: 2.9.14
+  resolution: "@turbo/windows-arm64@npm:2.9.14"
+  conditions: os=win32 & cpu=arm64
+  languageName: node
+  linkType: hard
+
 "@types/aria-query@npm:^5.0.1":
   version: 5.0.1
   resolution: "@types/aria-query@npm:5.0.1"
@@ -9886,7 +9928,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    turbo: 1.10.11
+    turbo: 2.9.14
   languageName: unknown
   linkType: soft
 
@@ -10701,74 +10743,32 @@ __metadata:
   languageName: node
   linkType: hard
 
-"turbo-darwin-64@npm:1.10.11":
-  version: 1.10.11
-  resolution: "turbo-darwin-64@npm:1.10.11"
-  conditions: os=darwin & cpu=x64
-  languageName: node
-  linkType: hard
-
-"turbo-darwin-arm64@npm:1.10.11":
-  version: 1.10.11
-  resolution: "turbo-darwin-arm64@npm:1.10.11"
-  conditions: os=darwin & cpu=arm64
-  languageName: node
-  linkType: hard
-
-"turbo-linux-64@npm:1.10.11":
-  version: 1.10.11
-  resolution: "turbo-linux-64@npm:1.10.11"
-  conditions: os=linux & cpu=x64
-  languageName: node
-  linkType: hard
-
-"turbo-linux-arm64@npm:1.10.11":
-  version: 1.10.11
-  resolution: "turbo-linux-arm64@npm:1.10.11"
-  conditions: os=linux & cpu=arm64
-  languageName: node
-  linkType: hard
-
-"turbo-windows-64@npm:1.10.11":
-  version: 1.10.11
-  resolution: "turbo-windows-64@npm:1.10.11"
-  conditions: os=win32 & cpu=x64
-  languageName: node
-  linkType: hard
-
-"turbo-windows-arm64@npm:1.10.11":
-  version: 1.10.11
-  resolution: "turbo-windows-arm64@npm:1.10.11"
-  conditions: os=win32 & cpu=arm64
-  languageName: node
-  linkType: hard
-
-"turbo@npm:1.10.11":
-  version: 1.10.11
-  resolution: "turbo@npm:1.10.11"
+"turbo@npm:2.9.14":
+  version: 2.9.14
+  resolution: "turbo@npm:2.9.14"
   dependencies:
-    turbo-darwin-64: 1.10.11
-    turbo-darwin-arm64: 1.10.11
-    turbo-linux-64: 1.10.11
-    turbo-linux-arm64: 1.10.11
-    turbo-windows-64: 1.10.11
-    turbo-windows-arm64: 1.10.11
+    "@turbo/darwin-64": 2.9.14
+    "@turbo/darwin-arm64": 2.9.14
+    "@turbo/linux-64": 2.9.14
+    "@turbo/linux-arm64": 2.9.14
+    "@turbo/windows-64": 2.9.14
+    "@turbo/windows-arm64": 2.9.14
   dependenciesMeta:
-    turbo-darwin-64:
+    "@turbo/darwin-64":
       optional: true
-    turbo-darwin-arm64:
+    "@turbo/darwin-arm64":
       optional: true
-    turbo-linux-64:
+    "@turbo/linux-64":
       optional: true
-    turbo-linux-arm64:
+    "@turbo/linux-arm64":
       optional: true
-    turbo-windows-64:
+    "@turbo/windows-64":
       optional: true
-    turbo-windows-arm64:
+    "@turbo/windows-arm64":
       optional: true
   bin:
     turbo: bin/turbo
-  checksum: caa5f4e6e6f9b340e8b44424d83b5e9b1ad478ae646d3a5cb6784dc68c420e0237a7e293e6ac7ab5776fad9d08bf886bcecb898a69f7bfb151d3446fa885ec3f
+  checksum: 8cc51fa1b82e6b3603c164a38aa1e99a6d1f27b1bedc8a47190fb56d1a5e69b5bae6c38df95b7fc99ca139ac73e3f6a0e1df150cbd629476a7128269307a2099
   languageName: node
   linkType: hard
 
