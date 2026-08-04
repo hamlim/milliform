@@ -5801,7 +5801,7 @@ __metadata:
     eslint-config-next: 13.4.12
     milliform: "*"
     next: canary
-    postcss: 8.5.10
+    postcss: 8.5.18
     react: experimental
     react-day-picker: ^8.8.0
     react-dom: experimental
@@ -7175,9 +7175,9 @@ __metadata:
   linkType: hard
 
 "hono@npm:^4.11.4":
-  version: 4.12.29
-  resolution: "hono@npm:4.12.29"
-  checksum: 9699928d3d94f1bcf0d8e99a1464fa5f827a4a1f1f914305e194d041feca8c7fc8c497dd44489af9b6a5cfacd2ebe435e46afaf310b80a2075c6bb2a31954b30
+  version: 4.13.0
+  resolution: "hono@npm:4.13.0"
+  checksum: bf0d008334f1daaee0c2c2669e40036c8f32137493c43e93488e78b2314426feb0baf944f45fee20890a7538262deb21c0f6912ad5bb145a6c9a61d0d702f093
   languageName: node
   linkType: hard
 
@@ -8926,12 +8926,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nanoid@npm:^3.3.11":
-  version: 3.3.12
-  resolution: "nanoid@npm:3.3.12"
+"nanoid@npm:^3.3.12":
+  version: 3.3.17
+  resolution: "nanoid@npm:3.3.17"
   bin:
     nanoid: bin/nanoid.cjs
-  checksum: 38699257447dc59e21e73e0510d0dfb16b7a610d9ca80633d5c3a68f9b4298c990513d30404ca8f163c2d03225ee01695ff8898bea6179183f38f0477b7635ac
+  checksum: dbbfd5ccc15a9bce602797ee75b98ee5ad377bd217782b8d2e7438e6e0ba0c54529a9f60437910aa00e263224b3c074b51a1aa3e21084a3cb56347a6cbacc275
   languageName: node
   linkType: hard
 
@@ -9573,14 +9573,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.5.10":
-  version: 8.5.10
-  resolution: "postcss@npm:8.5.10"
+"postcss@npm:8.5.18":
+  version: 8.5.18
+  resolution: "postcss@npm:8.5.18"
   dependencies:
-    nanoid: ^3.3.11
+    nanoid: ^3.3.12
     picocolors: ^1.1.1
     source-map-js: ^1.2.1
-  checksum: 9af9cd7f2f0d4b8456f6710e48d586328433509b695911fda942c24ac4db4e62c6fed8c6c6d8c8258326285f669494c2c36a4ff84aa160f0586eb545e5258bf5
+  checksum: 924b71b066ada1909b741970b53529b95a6589106302a154cd14b2fae0c8186144be2bb1e0c45e0f3e530474cf92afa01d790afa8b71dcd60c98ca8ee42f66c1
   languageName: node
   linkType: hard
 
